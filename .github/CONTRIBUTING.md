@@ -31,4 +31,4 @@ Good pull requests - patches, improvements, new features - are a great help. The
 
 Also follow to the coding conventions used throughout the project (indentation, comments, etc.).
 
-> All pull requests should be submitted to the `staging` branch, **not** the `master` branch.
+> All pull requests should be submitted to the `staging` branch, **not** the `main` branch.
