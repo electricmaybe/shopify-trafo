@@ -1,0 +1,15 @@
+# SHOPIFY IGNORE
+_scripts
+_styles
+sections/*.{scss,css}
+snippets/*.{scss,css}
+
+.config
+node_modules
+.gitignore
+LICENSE
+package.json
+package-lock.json
+README.md
+yarn-error.log
+yarn.lock

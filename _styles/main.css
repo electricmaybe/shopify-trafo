@@ -1,0 +1,14 @@
+/**
+ * entry file for Tailwind CSS
+ * 
+ */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* @import css files automatically from _styles folder */
+@import-glob "../_styles/**/*.css";
+
+/* @import css files automatically from components */
+@import-glob "../sections/**/*.css";
+@import-glob "../snippets/**/*.css";
