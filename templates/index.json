@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "main": {
+      "type": "example-component"
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
