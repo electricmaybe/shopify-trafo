@@ -1,7 +1,7 @@
 # ⚡️ Shopify Trafo
 Shopify development kit with new Shopify CLI released on [2021 Shopify Unite](https://unite.shopify.com).
 
-Uses [Shopify Cli](https://github.com/Shopify/shopify-cli), [Tailwindcss](https://github.com/tailwindlabs/tailwindcss), [PostCSS](https://github.com/postcss/postcss) and [Webpack](https://github.com/webpack/webpack). Uses [Concurrently](https://github.com/kimmobrunfeldt/concurrently) to run watchers in parallel.
+Uses [Shopify Cli](https://github.com/Shopify/shopify-cli), [Tailwindcss](https://github.com/tailwindlabs/tailwindcss), [PostCSS](https://github.com/postcss/postcss) and [Webpack](https://github.com/webpack/webpack). Uses [Stmux](https://github.com/rse/stmux) to run watchers in parallel.
 
 > The project is still work in progress.
 >
