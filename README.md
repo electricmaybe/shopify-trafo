@@ -83,8 +83,11 @@ $ yarn build:dev
 $ yarn build:production
 ```
 
-### Disabling grid view
-In `package.json` file, remove `--grid` flags from `scripts -> dev` and `scripts -> production`.
+### Stop environment (kill stmux terminal grid)
+This setup uses [stmux](https://github.com/rse/stmux) for grid view. This helps you see errors for each cli easily.
+
+To kill stmux terminals:
+Hit `CTRL+a` combination first, then hit `k`.
 
 ### Working on local server
 Shopify CLI comes with a local theme server which lets you preview your changes live on your local machine.
