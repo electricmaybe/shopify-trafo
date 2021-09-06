@@ -22,7 +22,7 @@ Uses [Shopify Cli](https://github.com/Shopify/shopify-cli), [Tailwindcss](https:
 ## Roadmap
 - [X] Update Readme for codebase structure explanation
 - [X] Update Readme for installation and usage
-- [X] Migrate Concurrently Grid
+- [X] Migrate Grid View
 - [X] Migrate Webpack
 - [X] Migrate Tailwind CLI
 - [X] Migrate Shopify CLI
