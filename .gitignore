@@ -7,3 +7,4 @@ assets/style.css
 assets/index.js
 .idea/
 build/*
+!build/.gitkeep
