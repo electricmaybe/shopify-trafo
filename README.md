@@ -1,7 +1,9 @@
 # ⚡️ Shopify Trafo
-Shopify development kit with new Shopify CLI released on [2021 Shopify Unite](https://unite.shopify.com).
+Shopify development kit with new Shopify CLI released on [2021 Shopify Unite](https://unite.shopify.com). 
 
-Uses [Shopify Cli](https://github.com/Shopify/shopify-cli), [Tailwindcss](https://github.com/tailwindlabs/tailwindcss), [PostCSS](https://github.com/postcss/postcss) and [Webpack](https://github.com/webpack/webpack). Uses [Stmux](https://github.com/rse/stmux) to run watchers in parallel.
+Subfolder structure on Shopify theme folders, css and js in these folders will be exported to assets folder 🤩
+
+Uses [Shopify Cli](https://github.com/Shopify/shopify-cli), [Tailwindcss](https://github.com/tailwindlabs/tailwindcss), [PostCSS](https://github.com/postcss/postcss) and [Webpack](https://github.com/webpack/webpack). Uses Concurrently to run watchers in parallel.
 
 > The project is still work in progress.
 >
@@ -13,16 +15,16 @@ Uses [Shopify Cli](https://github.com/Shopify/shopify-cli), [Tailwindcss](https:
 - Uses native Shopify CLI
 - Can be used with Github Integration on Shopify
 - Asset pipeline via webpack and Tailwind CLI*—jit mode enabled*.
-- Imports CSS and JS as wildcard, add/remove components without importing
+- Imports CSS and JS files in _scripts and _styles as wildcard, add/remove components without importing
+- Moves all css and js files in snippets and sections folder to assets in build (add, remove sections as folders easily)
+- Subfolder structure on native Shopify folders 🤩
 - CSS nesting enabled via PostCSS
 - Lints Shopify, CSS and JS
 - Easily integrate any theme
-- Easy to monitor grid view on terminal
 
 ## Roadmap
 - [X] Update Readme for codebase structure explanation
 - [X] Update Readme for installation and usage
-- [X] Migrate Grid View
 - [X] Migrate Webpack
 - [X] Migrate Tailwind CLI
 - [X] Migrate Shopify CLI
@@ -82,12 +84,6 @@ $ yarn build:dev
 ```shell
 $ yarn build:production
 ```
-
-### Stop environment (kill stmux terminal grid)
-This setup uses [stmux](https://github.com/rse/stmux) for grid view. This helps you see errors for each cli easily.
-
-To kill stmux terminals:
-Hit `CTRL+a` combination first, then hit `k`.
 
 ### Working on local server
 Shopify CLI comes with a local theme server which lets you preview your changes live on your local machine.
