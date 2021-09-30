@@ -86,10 +86,10 @@ module.exports = {
         {
           from: 'assets/**/*', // combines all assets subfolders into /assets
           to: '../../build/assets/[name][ext]',
-          noErrorOnMissing: true
-          // globOptions: {
-          //   ignore: ['**/*.js', '**/*.scss', '**/*.sass', '**/*.css', ] // ignores preadded js and css files.
-          // }
+          noErrorOnMissing: true,
+          globOptions: {
+            ignore: ['**/*.js', '**/*.scss', '**/*.sass', '**/*.css', ] // ignores preadded js and css files.
+          }
         }
       ]
     })
