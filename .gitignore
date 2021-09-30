@@ -6,3 +6,4 @@ node_modules/
 assets/style.css
 assets/index.js
 .idea/
+build/*

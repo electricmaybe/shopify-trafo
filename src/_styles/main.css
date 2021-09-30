@@ -7,8 +7,4 @@
 @import "tailwindcss/utilities";
 
 /* @import css files automatically from _styles folder */
-@import-glob "../_styles/**/*.css";
-
-/* @import css files automatically from components */
-@import-glob "../sections/**/*.css";
-@import-glob "../snippets/**/*.css";
+@import-glob "../_styles/**/*.{scss,css}";

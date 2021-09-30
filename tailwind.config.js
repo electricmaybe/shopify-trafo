@@ -9,11 +9,11 @@ module.exports = {
   mode: 'jit',
   theme: {},
   purge: [
-    './assets/*.js',
-    './assets/!(style).css',
-    './layout/*.liquid',
-    './sections/*.liquid',
-    './snippets/*.liquid',
-    './templates/*.liquid'
+    './build/assets/*.js',
+    './build/assets/!(style).css',
+    './build/layout/*.liquid',
+    './build/sections/*.liquid',
+    './build/snippets/*.liquid',
+    './build/templates/*.liquid'
   ]
 }
