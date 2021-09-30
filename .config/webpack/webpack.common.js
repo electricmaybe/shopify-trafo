@@ -34,34 +34,54 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: 'snippets/**/*.{scss,css,js,liquid}', // combines all snippet subfolders into /snippets
+          from: 'snippets/**/*.liquid', // combines all snippet subfolders into /snippets
           to: '../../build/snippets/[name][ext]',
           noErrorOnMissing: true
         },
         {
-          from: 'sections/**/*.{scss,css,js,liquid}', // combines all snippet subfolders into /snippets
+          from: 'snippets/**/*.{scss,css,js}', // exports all styles and scripts into assets folder
+          to: '../../build/assets/[name][ext]',
+          noErrorOnMissing: true
+        },
+        {
+          from: 'sections/**/*.liquid', // combines all snippet subfolders into /snippets
           to: '../../build/sections/[name][ext]',
           noErrorOnMissing: true
         },
         {
-          from: 'templates/**/*.{scss,css,js,liquid,json}', // moves templates folder as usual
+          from: 'sections/**/*.{scss,css,js}', // exports all styles and scripts into assets folder
+          to: '../../build/assets/[name][ext]',
+          noErrorOnMissing: true
+        },
+        {
+          from: 'templates/**/*.{liquid,json}',  // combines all template subfolders into /templates
           to: '../../build/templates/[name][ext]',
           noErrorOnMissing: true
         },
         {
-          from: 'layout/**/*.{scss,css,js,liquid}', // moves layout folder as usual
+          from: 'templates/**/*.{scss,css,js}', // exports all styles and scripts into assets folder
+          to: '../../build/assets/[name][ext]',
+          noErrorOnMissing: true
+        },
+        {
+          from: 'layout/**/*.{scss,css,js}', // exports all styles and scripts into assets folder
+          to: '../../build/assets/[name][ext]',
+          noErrorOnMissing: true
+        },
+        {
+          from: 'layout/**/*.liquid',  // combines all layout subfolders into /layout
           to: '../../build/layout/[name][ext]',
           noErrorOnMissing: true
         },
         {
-            from: 'config/',  // moves config folder as usual
-            to: '../../build/config',
-            noErrorOnMissing: true
+          from: 'config/',  // moves config folder as usual
+          to: '../../build/config',
+          noErrorOnMissing: true
         },
         {
-            from: 'locales/',  // moves locales folder as usual
-            to: '../../build/locales',
-            noErrorOnMissing: true
+          from: 'locales/',  // moves locales folder as usual
+          to: '../../build/locales',
+          noErrorOnMissing: true
         },
         {
           from: 'assets/**/*', // combines all assets subfolders into /assets
